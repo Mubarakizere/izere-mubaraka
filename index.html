@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Izere Mubaraka – Full-Stack Developer</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3b82f6',
+            accent: '#facc15',
+            background: '#f9fafb',
+            darkText: '#1e293b',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Fonts & AOS -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .gradient-text {
+      background: linear-gradient(to right, #3b82f6, #facc15);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+
+<body class="bg-background text-darkText overflow-x-hidden">
+
+  <!-- Navbar -->
+  <header class="fixed w-full top-0 left-0 z-50 bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl md:text-2xl font-bold text-primary">Izere Mubaraka</h1>
+      <nav class="space-x-6 hidden md:block">
+        <a href="#about" class="text-gray-700 hover:text-primary transition">About</a>
+        <a href="#projects" class="text-gray-700 hover:text-primary transition">Projects</a>
+        <a href="#contact" class="text-gray-700 hover:text-primary transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-24 bg-gradient-to-b from-white to-blue-50" data-aos="fade-up">
+    <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4">
+      Hello, I'm <span class="gradient-text">Izere Mubaraka</span>
+    </h2>
+    <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mb-6">
+      Full-Stack Developer from Rwanda 🇷🇼, building beautiful web apps with Laravel & WordPress.
+    </p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="https://github.com/Mubarakizere" target="_blank" class="px-6 py-3 bg-primary text-white rounded-full font-semibold hover:bg-accent transition shadow">
+        🌐 GitHub
+      </a>
+      <a href="#projects" class="px-6 py-3 border border-primary text-primary hover:bg-primary hover:text-white rounded-full font-semibold shadow">
+        🚀 My Projects
+      </a>
+    </div>
+    <div class="mt-12 animate-bounce">
+      <a href="#about" class="text-primary text-3xl">↓</a>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20 px-6 bg-white">
+  <div class="text-center mb-12" data-aos="fade-up">
+    <h2 class="text-3xl md:text-4xl font-bold gradient-text">Featured Projects</h2>
+    <p class="text-gray-600 mt-2">Real-world projects I’ve built using Laravel & WordPress</p>
+  </div>
+
+  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    <!-- Project 1 -->
+    <div class="bg-blue-50 p-6 rounded-xl shadow hover:scale-105 transition" data-aos="fade-up">
+      <h3 class="text-xl font-semibold mb-2">Isaiah Nail Bar</h3>
+      <p class="text-gray-600 mb-4">Salon booking system with online payments (Laravel).</p>
+      <a href="https://isaiahnailbar.com" target="_blank" class="text-primary font-semibold hover:underline">Visit Site →</a>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="bg-blue-50 p-6 rounded-xl shadow hover:scale-105 transition" data-aos="fade-up" data-aos-delay="100">
+      <h3 class="text-xl font-semibold mb-2">Kaya Travels</h3>
+      <p class="text-gray-600 mb-4">Travel website with trip booking, blogs, and customer dashboard (Laravel).</p>
+      <a href="https://kayatravels.net" target="_blank" class="text-primary font-semibold hover:underline">Visit Site →</a>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="bg-blue-50 p-6 rounded-xl shadow hover:scale-105 transition" data-aos="fade-up" data-aos-delay="200">
+      <h3 class="text-xl font-semibold mb-2">Diva House Beauty</h3>
+      <p class="text-gray-600 mb-4">Laravel-powered e-commerce for beauty products with full admin management.</p>
+      <a href="https://divahousebeauty.com" target="_blank" class="text-primary font-semibold hover:underline">Visit Site →</a>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="bg-blue-50 p-6 rounded-xl shadow hover:scale-105 transition" data-aos="fade-up" data-aos-delay="250">
+      <h3 class="text-xl font-semibold mb-2">Divva News</h3>
+      <p class="text-gray-600 mb-4">A WordPress-based online news platform for breaking stories and featured articles.</p>
+      <a href="https://divvanews.com" target="_blank" class="text-primary font-semibold hover:underline">Visit Site →</a>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="bg-blue-50 p-6 rounded-xl shadow hover:scale-105 transition" data-aos="fade-up" data-aos-delay="300">
+      <h3 class="text-xl font-semibold mb-2">Mambo1</h3>
+      <p class="text-gray-600 mb-4">WordPress-powered business website focused on content publishing and blog layout.</p>
+      <a href="https://mambo1.com" target="_blank" class="text-primary font-semibold hover:underline">Visit Site →</a>
+    </div>
+
+    <!-- Project 6 -->
+    <div class="bg-blue-50 p-6 rounded-xl shadow hover:scale-105 transition" data-aos="fade-up" data-aos-delay="350">
+      <h3 class="text-xl font-semibold mb-2">Beza Collection</h3>
+      <p class="text-gray-600 mb-4">Modern WordPress e-commerce store for fashion with mobile-friendly checkout.</p>
+      <a href="https://bezacollectionrw.com" target="_blank" class="text-primary font-semibold hover:underline">Visit Site →</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- About -->
+  <section id="about" class="py-20 px-6 bg-slate-50 text-center">
+    <div class="max-w-4xl mx-auto" data-aos="fade-up">
+      <h2 class="text-3xl md:text-4xl font-bold gradient-text">About Me</h2>
+      <p class="mt-4 text-gray-600 text-lg">
+        I'm Izere Mubaraka, a Full-Stack Web Developer from Rwanda 🇷🇼. Currently studying at university, I build fast, responsive websites for clients using Laravel & WordPress.
+      </p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 max-w-4xl mx-auto text-center" data-aos="zoom-in-up">
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" class="h-10 mx-auto mb-2"><p>PHP</p></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" class="h-10 mx-auto mb-2"><p>Laravel</p></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" class="h-10 mx-auto mb-2"><p>Bootstrap</p></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" class="h-10 mx-auto mb-2"><p>Tailwind CSS</p></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="h-10 mx-auto mb-2"><p>JavaScript</p></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="h-10 mx-auto mb-2"><p>React</p></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="h-10 mx-auto mb-2"><p>MySQL</p></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="h-10 mx-auto mb-2"><p>Git & GitHub</p></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+ <!-- Contact + Footer -->
+<section id="contact" class="bg-white pt-20 pb-10 px-6 text-center">
+  <div class="max-w-3xl mx-auto mb-12" data-aos="fade-up">
+    <h2 class="text-3xl md:text-4xl font-bold gradient-text">Let's Work Together</h2>
+    <p class="mt-4 text-gray-600">Have a project or idea? Reach out by email or WhatsApp.</p>
+    <div class="mt-8 flex flex-col md:flex-row justify-center gap-6" data-aos="zoom-in-up">
+      <a href="mailto:izeremubarak05@gmail.com" class="bg-accent text-black font-semibold px-6 py-3 rounded-lg hover:bg-yellow-400 transition shadow">✉️ Email Me</a>
+      <a href="https://wa.me/250783460925" target="_blank" class="border border-accent px-6 py-3 rounded-lg text-accent hover:bg-accent hover:text-black transition shadow">💬 WhatsApp Me</a>
+    </div>
+  </div>
+
+  <!-- Footer inside the same section -->
+  <div class="bg-slate-100 text-gray-600 text-sm px-6 py-8 rounded-lg shadow-sm max-w-6xl mx-auto" data-aos="fade-up">
+    <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+      <div class="text-center md:text-left">
+        <p>&copy; <span id="year"></span> Izere Mubaraka. All rights reserved.</p>
+        <p>Made with ❤️ in Kigali, Rwanda.</p>
+      </div>
+      <div class="flex gap-6 justify-center">
+        <a href="https://github.com/Mubarakizere" target="_blank" class="hover:text-primary transition">GitHub</a>
+        <a href="#contact" class="hover:text-primary transition">Contact</a>
+        <a href="#top" class="hover:text-primary transition">↑ Top</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Scripts -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
+</body>
+</html>
